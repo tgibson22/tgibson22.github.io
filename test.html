@@ -9,13 +9,12 @@
 
   
   function getNumberAncestors(numGenerationsBack){
-    document.write("loop active");
     ancestorCount = 2;
     for (i = 1; i < numGenerationsBack; i++){
       document.write(i);
       ancestorCount = ancestorCount*2;
     };
-    document.write('No: ' + ancestorCount);
+    document.write("if you go back " + numGenerationsBack + ", you had up to " + ancestorCount + " ancestors.");
   };
   
   getNumberAncestors(numGenerationsBack);
@@ -28,7 +27,7 @@
     <h1> Generational Ancestor Calculator </h2>
       
       This calculator tells you how many ancestors (the maximum possible number, ignoring overlapping)
-    you have if you go back generation
+    you have if you go back generations. 
     
     <body>
 
