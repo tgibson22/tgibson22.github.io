@@ -10,10 +10,12 @@
   
   function getNumberAncestors(numGenerationsBack){
     document.write("loop active");
+    ancestorCount = 2;
     for (i = 1; i < numGenerationsBack; i++){
       document.write(i);
-      i = i*2;
+      ancestorCount = ancestorCount*2;
     };
+    document.write('No: ' + ancestorCount);
   };
   
   getNumberAncestors(5);
