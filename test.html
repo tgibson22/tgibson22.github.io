@@ -5,12 +5,14 @@
   
 <script>
   
-  var numGenerationsBack = prompt("how many gereations back?"); // this should be user input
+  var anumGenerationsBack = prompt("how many gereations back?"); // this should be user input
+  var numGenerationsBack = 6;
   
   function getNumberAncestors(numGenerationsBack){
     document.write("loop active");
-    for (i = 1; i < numGenerationsBack; i*2){
-      document.write(i + ' ');
+    for (i = 1; i < numGenerationsBack; i++){
+      document.write(i);
+      i = i*2;
     };
   };
   
