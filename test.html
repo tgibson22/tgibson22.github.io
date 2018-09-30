@@ -5,20 +5,13 @@
   
 <script>
   var a = prompt('TEST');
-  document.write("this is a test 1");
-  document.write(a);
-  var a = 1;
-  var b = 2;
-  var c = a + b;
-  console.log(c);
-  document.write("this is a test");
 
   var numGenerationsBack = 5; // this should be user input
   
   function getNumberAncestors(numGenerationsBack){
     document.write("loop active");
-    for (i = 0; i < numGenerationsBack; i++){
-      document.write(i);
+    for (i = 1; i < numGenerationsBack; i++){
+      document.write(i*2);
     };
   };
   
@@ -28,11 +21,7 @@
 
 
   <body> go away test</body>
-<script>
-
-  document.write("this is aat the end of the body");
 
   
-</script>
 
 </html>
