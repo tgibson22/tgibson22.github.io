@@ -17,11 +17,11 @@
   
   function getNumberAncestors(numGenerationsBack){
     document.write("loop active");
-    for (i = 0, i < numGenerationsBack, i++){
+    for (i = 0; i < numGenerationsBack; i++){
       document.write(i);
   };
   
-  document.write(getNumberAncestors(5));
+  getNumberAncestors(5);
   
 </script>
 
