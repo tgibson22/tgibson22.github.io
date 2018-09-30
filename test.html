@@ -11,7 +11,6 @@
   function getNumberAncestors(numGenerationsBack){
     ancestorCount = 2;
     for (i = 1; i < numGenerationsBack; i++){
-      document.write(i);
       ancestorCount = ancestorCount*2;
     };
     document.write("if you go back " + numGenerationsBack + ", you had up to " + ancestorCount + " ancestors.");
@@ -24,10 +23,16 @@
 
   <body> 
     
-    <h1> Generational Ancestor Calculator </h2>
-      
-      This calculator tells you how many ancestors (the maximum possible number, ignoring overlapping)
-    you have if you go back generations. 
+    <h1> Generational Ancestor Calculator </h1>
+      This calculator is supposed to tell you how many ancestors you have if you go back a specific number of generations.
+   
+    <h2> The Accuracy of this Calculator </h2>
+      This calculator doesn't account for is when your family tree overlaps, which it definitely does - a lot! As a general rule,
+    the more generations back that you go, the less accurate.
+    FOr example, if you go back 30 generations (roughly 1000 years), the result of this calculation shows you should have had over 1 
+    billion ancestors. This isn't possible if the world population at the time was much less than 1 billion.
+    
+    
     
     <body>
 
