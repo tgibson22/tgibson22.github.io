@@ -5,15 +5,19 @@
   
 <script>
   
-  var numGenerationsBack = prompt("how many generations back do you want to count?"); // this should be user input
+  let numGenerationsBack = prompt("how many generations back do you want to count?");
 
   
   function getNumberAncestors(numGenerationsBack){
-    ancestorCount = 2;
+    const averageGenerationAge = 30;
+    let approxNumberOfYearsAgo = numGenerationsBack * averageGenerationAge;
+    
+    let ancestorCount = 2;
+    
     for (i = 1; i < numGenerationsBack; i++){
       ancestorCount = ancestorCount*2;
     };
-    document.write("if you go back " + numGenerationsBack + ", you had up to " + ancestorCount + " ancestors.");
+    document.write("If you go back " + numGenerationsBack + " generations (approximately " + approxNumberOfYearsAgo + " years ago), you had up to " + ancestorCount + " ancestors.");
   };
   
   getNumberAncestors(numGenerationsBack);
@@ -29,7 +33,7 @@
     <h2> The Accuracy of this Calculator </h2>
       This calculator doesn't account for is when your Pedigree Collapse (family tree overlaps, which it definitely does - a lot!) As a general rule,
     the more generations back that you go, the less accurate the number will be.
-    FOr example, if you go back 30 generations (roughly 1000 years), the result of this calculation shows you should have had over 1 
+    For example, if you go back 30 generations (roughly 1000 years), the result of this calculation shows you should have had over 1 
     billion ancestors. This isn't possible if the world population at the time was much less than 1 billion.
     
     
